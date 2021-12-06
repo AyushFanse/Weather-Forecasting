@@ -58,7 +58,7 @@ input[type="search1"],[type="button1"]{
 }
 #wrong{
     width:400px;
-    height: 280px;
+    height: 300px;
     border-radius: 30px;
     background: rgb(15, 20, 26);
     box-shadow: 4px 8px 10px rgb(15, 22, 29);
