@@ -56,6 +56,14 @@ input[type="search1"],[type="button1"]{
     justify-content: center;
     width:100%;
 }
+#wrong{
+    width:400px;
+    height: 280px;
+    border-radius: 30px;
+    background: rgb(15, 20, 26);
+    box-shadow: 4px 8px 10px rgb(15, 22, 29);
+    transition:0.2s;
+}
 #card{
     width:400px;
     height: auto;

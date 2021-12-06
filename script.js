@@ -18,7 +18,6 @@ const FetchingDataFromUrl = async (object)=>{
     let LiveDateAndTime ="";
     const AmPm= DateNow.getHours()>12 ? "PM" : "AM";
     LiveDateAndTime += DateNow.getDate()+ '/'+DateNow.getMonth()+ '/'+ DateNow.getFullYear() + ' '+DateNow.getHours()+':'+DateNow.getMinutes() + " " + AmPm;
-git
     if(searchInput.value==""){
         let defaultData=
                         `
@@ -32,8 +31,8 @@ git
                             </div>
                         `;
         processingData=document.createElement('div');
-        processingData.setAttribute('class','card');
-        processingData.setAttribute('id','card');
+        processingData.setAttribute('class','card wrong');
+        processingData.setAttribute('id','wrong');
         processingData.innerHTML= defaultData;
         displayData.append(processingData);
     }else{
@@ -44,14 +43,15 @@ git
                             <h5 class="card-title font ml-3">Welcome to Weather Foracasting</h5>
                             <hr>
                             <span>
-                                <h5 class="electedFont">Please Enter Valide Data...</h5>
+                                <h5 class="selectedFont">Please Enter Valide Data...</h5>
                                 <span class="d-flex justify-content-center"><img class="weatherImgError" src="Weather.png" alt="Weather.png"></span>
                             </span>                            
                             </div>
                         `;
         processingData=document.createElement('div');
+
         processingData.setAttribute('class','card');
-        processingData.setAttribute('id','card');
+        processingData.setAttribute('id','wrong');
         processingData.innerHTML= wrongData;
         displayData.append(processingData);
         }
