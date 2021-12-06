@@ -1,0 +1,123 @@
+.body{
+    background: rgb(33, 47, 61);
+}
+.Title{
+    color:rgb(207, 207, 207);
+    text-align:center;
+    margin-top: 35px;
+    margin-bottom: -7px;
+    text-shadow: 4px 8px 7px rgb(1, 4, 7);
+}
+.input-group{
+    justify-content: center;
+}
+input[type="search1"]{
+    width:400px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px ;
+    background: rgb(182, 184, 185);
+    box-shadow: 4px 8px 10px rgb(15, 22, 29);
+}
+@media (max-width: 768px){
+    input[type="search1"]{
+        width:225px;
+        transition: 0.5s;
+    }
+}
+#search{
+    font-size:20px;
+    text-align:center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#searchButton{
+    width:65px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px ;
+    background: rgb(15, 20, 26);
+    box-shadow: 4px 8px 10px rgb(15, 22, 29);
+}
+input[type="search1"],[type="button1"]{
+    height:45px;
+}
+.searchIcon{
+    color:rgb(182, 184, 185);
+    background: rgba(0, 0, 0, 0);
+    transition: 0.3s;
+    filter: drop-shadow(2px 6px 3px #000)
+}
+.searchIcon:hover{
+    margin-top:4px;
+    font-size:20px;
+    transition:0.2s;
+}
+.cardContaint{
+    margin-top: 90px;
+    display:flex;
+    justify-content: center;
+    width:100%;
+}
+#card{
+    width:400px;
+    height: auto;
+    border-radius: 30px;
+    background: rgb(15, 20, 26);
+    box-shadow: 4px 8px 10px rgb(15, 22, 29);
+    transition:0.2s;
+}
+#card:hover{
+    margin-top: -6px;
+    box-shadow: 8px 15px 16px rgb(15, 22, 29);
+    transition:0.3s;
+}
+.place{
+    margin-left: 7px;
+    font-weight: bold;
+    height:auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.country{
+    font-size:15px;
+}
+.weatherImgError{
+    margin-top:-20px;
+    width :200px;
+    height:200px;
+}
+.tempData{
+    padding: 3px;
+    height: 110px;
+    justify-content: center;
+}
+.degree{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size:40px;
+    font-weight: bold;
+    height:100px;
+    background: rgb(15, 20, 26);
+}
+.img{
+    display:flex; 
+    justify-content:space-around; 
+    font-size: 4rem;
+}
+.dis{
+    margin-top:5px;
+    text-align:center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+#time{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.selectedFont{
+    text-align:center;
+    color: rgb(255, 159, 159);
+    text-shadow: 2px 3.7px 5px #000;
+}
+.shadow{
+    filter: drop-shadow(0 8px 8px #000)
+}
+.font{
+    color:rgb(121, 126, 136);
+    text-shadow: 2px 3.7px 5px #000;
+}
