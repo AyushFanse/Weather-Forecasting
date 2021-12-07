@@ -11,7 +11,6 @@ const FetchingDataFromUrl = async (object)=>{
                                     .catch(error => console.error(error));
     let gettingWeatherData = await fetchingWeatherData.json()
                                     .catch(error => console.error(error));
-    console.log(gettingWeatherData);
 
     //Time And Date
     let DateNow = new Date(Date.now());
@@ -111,6 +110,12 @@ const FetchingDataFromUrl = async (object)=>{
 searchButton.addEventListener('click', () => {
     FetchingDataFromUrl(searchInput.value);
 }   );
+
+document.getElementById('search').onkeydown = function(e){
+    if(e.keyCode ==13){
+        FetchingDataFromUrl(searchInput.value);
+    }
+}
 
 
 FetchingDataFromUrl();
